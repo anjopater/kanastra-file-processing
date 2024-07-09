@@ -1,0 +1,13 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - '5001:5500'
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=app.app
+      - FLASK_ENV=development

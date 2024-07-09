@@ -1,0 +1,5 @@
+flask
+pandas
+pytest
+pytest-flask
+requests
